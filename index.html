@@ -5,35 +5,49 @@
 		<title>gyp-home</title>
 		<link rel="stylesheet" href="css/home.css" />
 		<link rel="stylesheet" href="css/trp.css" />
-		<script src="js/jquery.js"></script>
+		<link type="text/css" rel="Stylesheet" href="css/imageflow.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/imageflow.js"></script>
 		<script src="js/home.js"></script>
 	</head>
 	<style>
-		@media (min-width: 992px)
-		.container {
-		    max-width: 100%;
+	@media screen and (min-width: 1200px) {
+		.header  .header-mid .menu{
+			display: block;
 		}
-		.details{
-			 max-width: 800px;
+		.header  .header-mid .myloge{
+			float: left;
+			text-align: center;
 		}
-		/*.header{
+	}	
+	@media screen and (max-width: 1200px) and (min-width:992px){
+		.header  .header-mid .menu{
+			display: block;
+		}
+		 .header.myloge{
+			float: left;
+			text-align: center;
+		}
+	}
+	@media screen and (max-width: 992px) and (min-width:768px){	
+		 .header  .header-mid .menu{
 			display: none;
-		}*/
-		@media (min-width: 768px)
-		.container {
-		    max-width: 750px;
 		}
-		.details{
-			 max-width: 600px;
+		.header  .header-mid .myloge{
+			float: none;
+			text-align: center;
 		}
-		.container {
-		    padding-right: 15px;
-		    padding-left: 15px;
-		    margin-right: auto;
-		    margin-left: auto;
+	}
+	@media screen and (max-width: 768px) {
+		.header  .header-mid .menu{
+			display: none;
 		}
-		
-		canvas{cursor:crosshair;display:block;left:0;position:absolute;top:0;z-index:2000}
+		.header  .header-mid .myloge{
+			float: none;
+			text-align: center;
+		}	
+	}
+	canvas{cursor:crosshair;display:block;left:0;position:absolute;top:0;z-index:2000}
 </style>
 	<body>
 		<script type="text/javascript" src="js/jquery-2.0.0.min.js"></script>
@@ -313,17 +327,16 @@ var fworks = new Fireworks();
 		<!--header-->
 	<div class="header container">
 		<div class="header-mid container">
-			<div class="myloge">
+			<div class="myloge col-md-6 col-lg-6 col-sm-12 col-xs-12">
 				<img src="img/name.png" alt="" class="loge" style="height:30%" />
 				<span>phone:15034164080</span>
 			</div>
-			<div class="menu">
+			<div class="menu col-md-6 col-lg-6 col-sm-12 col-xs-12">
 				<a href="javascript:;" class="menu-eve menu-eve1">home</a>
 				<a href="javascript:;" class="menu-eve">production</a>
 				<a  href="javascript:;" class="menu-eve">skill</a>
 				<a href="javascript:;" class="menu-eve">about</a>
-				<a  href="javascript:;" class="menu-eve">contaction</a>
-				
+				<a  href="javascript:;" class="menu-eve">        </a>			
 			</div>
 		</div>
 	</div>
@@ -355,8 +368,7 @@ var fworks = new Fireworks();
 				<span class="spans6">工</span>
 				<span class="spans7">程</span>
 				<span class="spans8">师</span>
-			</div>
-				
+			</div>			
 			</div>
 		</div>
 		<!--FEATURES-->
@@ -377,7 +389,7 @@ var fworks = new Fireworks();
 						<li class="feat-icon  col-lg-4 col-md-4 col-xs-6 col-sm-6" >
 							<div class="icon-eve">
 								<img src="img/features1.png" alt="" />								<div class="cover">
-									<h5>Perform</h5>
+									<h5>Interest</h5>
 									<p>Clean Styles for Artists</p>
 								</div>
 							</div>
@@ -386,7 +398,7 @@ var fworks = new Fireworks();
 							<div class="icon-eve">
 								<img src="img/features2.png" alt="" />
 								<div class="cover">
-									<h5>Perform</h5>
+									<h5>Self-study</h5>
 									<p>Clean Styles for Artists</p>
 								</div>
 							</div>
@@ -395,7 +407,7 @@ var fworks = new Fireworks();
 							<div class="icon-eve">
 								<img src="img/features3.png" alt="" />
 								<div class="cover">
-									<h5>Perform</h5>
+									<h5>Duty</h5>
 									<p>Clean Styles for Artists</p>
 								</div>
 							</div>
@@ -404,7 +416,7 @@ var fworks = new Fireworks();
 							<div class="icon-eve">
 								<img src="img/features4.png" alt="" />
 								<div class="cover">
-									<h5>Perform</h5>
+									<h5>Unity</h5>
 									<p>Clean Styles for Artists</p>
 								</div>
 							</div>
@@ -413,7 +425,7 @@ var fworks = new Fireworks();
 							<div class="icon-eve">
 								<img src="img/features5.png" alt="" />
 								<div class="cover">
-									<h5>Perform</h5>
+									<h5>Full</h5>
 									<p>Clean Styles for Artists</p>
 								</div>
 							</div>
@@ -422,7 +434,7 @@ var fworks = new Fireworks();
 							<div class="icon-eve">
 								<img src="img/features6.png" alt="" />
 								<div class="cover">
-									<h5>Perform</h5>
+									<h5>Artists</h5>
 									<p>Clean Styles for Artists</p>
 								</div>
 							</div>
@@ -431,15 +443,15 @@ var fworks = new Fireworks();
 					
 				</div>
 			</div>	
-		</div>
-		
+		</div>	
 		<!--PORTFOLIO STYLE-->
 		<div class="portfolio floor container">
 			<div class="pro-mid container">
 				<h1 class="pro-h">PORTFOLIO STYLE</h1>
 			</div>
-			<ul class="detail">
-				<li class="detail-eve col-lg-4 col-md-4 col-xs-4 col-sm-12">
+			<ul class="detail detail-cir">
+				<li class="xiaoyingyong">项目与网页</li>
+				<li class="detail-eve col-lg-4 col-md-4 col-xs-12 col-sm-6">
 					<div class="con">
 						<a href="http://gaothing.github.io/yintai" class="img">
 							<img src="img/yt.jpg" alt="" />
@@ -483,7 +495,7 @@ var fworks = new Fireworks();
 						</div>
 					</div>
 				</li> 
-				<li class="detail-eve col-lg-4 col-md-4 col-xs-6 col-sm-12">
+				<li class="detail-eve col-lg-4 col-md-4 col-xs-12 col-sm-6">
 					<div class="con">
 						<a href="http://nanshan4080.duapp.com" class="img">
 							<img src="img/nan.jpg" alt="" />
@@ -527,7 +539,7 @@ var fworks = new Fireworks();
 						</div>
 					</div>
 				</li> 
-				<li class="detail-eve col-lg-4 col-md-4 col-xs-6 col-sm-12">
+				<li class="detail-eve col-lg-4 col-md-4 col-xs-12 col-sm-12">
 					<div class="con">
 						<a href="http://gaothing.github.io/guomei" class="img">
 							<img src="img/jd.jpg" alt="" />
@@ -570,8 +582,27 @@ var fworks = new Fireworks();
 							</div>
 						</div>
 					</div>
-				</li> 
-				
+				</li> 		
+			</ul>		
+			<!--2-->
+			<ul class="detail detail-pad">
+				<div class="xiaoyingyong">小应用与微信小程序</div>
+				<div id="LoopDiv">
+					<input id="S_Num" type="hidden" value="8" />
+					<div id="starsIF" class="imageflow">
+	
+						<img class="apply" longdesc="http://gaothing.github.io/todo" src="images/todo.png"  width="280" height="300"  />
+						<img class="apply" longdesc="http://mycontact02.duapp.com" src="images/link.jpg"  width="280" height="300"  />
+						<img class="apply" longdesc="http://mycontact.duapp.com" src="images/call.png"  width="280" height="300"  />
+						<img class="apply" longdesc="http://mycontact.duapp.com" src="images/fang.png"  width="280" height="300" />
+						<img class="apply" longdesc="http://mycontact02.duapp.com" src="images/zhihu.png"  width="280" height="300"  />
+						<img class="apply" longdesc="http://gaothing.github.io/iCloud" src="images/icloud.png"  width="280" height="300"  />
+						<img class="apply" longdesc="http://gaothing.github.io/music" src="images/music.png"  width="280" height="300"  />
+					</div>
+				</div>
+				<div class="xieshi">
+					<a id="gaoyanpeng" href=""></a>
+				</div>
 			</ul>
 		</div>
 		<!--my skill-->
@@ -644,8 +675,7 @@ var fworks = new Fireworks();
 					<a href="" class="dd">
 						<img src="img/weixin.jpg" alt="" />
 					</a>
-				</li>
-				
+				</li>				
 			</ul>
 		</div>
 		<!--about me-->
@@ -658,21 +688,25 @@ var fworks = new Fireworks();
 				</h3>
 				<ul class="container">
 					<li class="twobag  col-lg-6 col-md-6 col-sm-12 col-xs-12">	
-						<a href="" class="tou">
+						<a href="javascript:;" class="tou">
 							<img src="img/team2.jpg" alt="" />
 						</a>
 						<a class="simple simple1" href="">姓名：<span>高艳鹏</span></a>
 						<a class="simple" href="">毕业学校：<span>太原工业学院</span></a>
-<a class="simple" href="">学历：<span>本科</span></a>
-					
+						<a class="simple" href="">学历：<span>本科</span></a>
+						<a class="simple" href="">电话：<span>15034164080</span></a>
+						<a class="simple" href="">邮箱：<span>15034164080@163.com</span></a>				
 					</li>
 					<li class="twobag  col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<p class="mai"><i>关于前端</i>：我认为他的深度是没有尽头的，所以探索是一生的路！</p>
 						<p class="mai1"><i>关于工作</i>：我是一个要求自己有在有限时间内做到最好的态度，也是我一直的习惯！</p>
 						<p class="mai2"><i>关于团队</i>：个人能力以及团队的默契合作都是重要的！</p>
+						<p class="mai3"><i>关于自己</i>：较好的适应能力能让我快速融入一个集体，较强的学习能力让我可以很快上手，随和的性格让我可以更好的与人相处。</p>
 					</li>
+					<li class="my"></li>
 				</ul>
 			</div>
 		</div>
+		<!--<div class="goTop">TOP</div>-->
 	</body>
 </html>

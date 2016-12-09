@@ -47,18 +47,19 @@ img {
     padding: 0 20px;
     margin: 0 auto;
     background: transparent; }
-    .header .header-mid .loge {
+    .header .header-mid .myloge {
       height: 100%;
       width: auto;
       float: left;
-      overflow: hidden;
-      line-height: 100%; }
-    .header .header-mid span {
-      font-size: 18px;
-      color: #fff;
-      font-weight: bolder;
-      padding: 0 4px;
-      padding-top: 20px; }
+      overflow: hidden; }
+      .header .header-mid .myloge img {
+        height: 40%; }
+      .header .header-mid .myloge span {
+        font-size: 18px;
+        color: #fff;
+        font-weight: bolder;
+        padding: 0 4px;
+        padding-top: 20px; }
     .header .header-mid .menu {
       width: auto;
       height: 100%;
@@ -72,10 +73,9 @@ img {
         padding: 0 10px;
         color: #FFF;
         text-transform: uppercase;
-        border-bottom: 1px solid transparent;
-        font-weight: 400; }
-      .header .header-mid .menu .menu-eve1 {
-        border-bottom: 1px solid #79BE0B; }
+        border-bottom: 3px solid transparent;
+        font-weight: 400;
+        font-weight: bold; }
 
 /*banner*/
 .banner {
@@ -95,7 +95,7 @@ img {
     overflow: hidden; }
     .banner .web .huan {
       margin-left: -800px;
-      animation: huanact 1.2s linear forwards 0.4s; }
+      animation: huanact 1.8s linear forwards 1s; }
       .banner .web .huan span {
         color: #fff;
         font-size: 40px;
@@ -358,17 +358,18 @@ img {
   background: rgba(0, 0, 0, 0.8);
   overflow: hidden;
   z-index: 100;
-  padding-bottom: 30px; }
+  padding-bottom: 70px; }
   .portfolio .pro-mid {
     height: auto;
     margin: 0 auto;
-    padding: 40px 0; }
+    padding: 20px 0;
+    padding-bottom: 0; }
     .portfolio .pro-mid .pro-h {
       margin: 0 auto;
       width: 714px;
-      height: 128px;
+      height: 80px;
       box-sizing: border-box;
-      line-height: 128px;
+      line-height: 80px;
       text-align: center;
       color: #fff;
       font-weight: 600;
@@ -377,7 +378,8 @@ img {
       letter-spacing: 0.1em; }
   .portfolio .detail {
     height: auto;
-    margin: 0 auto; }
+    margin: 0 auto;
+    z-index: 99; }
     .portfolio .detail .detail-eve {
       opacity: 0;
       transform: translate(200px, 200px); }
@@ -479,6 +481,8 @@ img {
       opacity: 1;
       transition: all 0.6s linear;
       transform: translate(0, 0); }
+  .portfolio .detail-pad {
+    margin-bottom: 40px; }
 
 /*my skill*/
 .skill {
@@ -489,7 +493,8 @@ img {
   padding-top: 40px;
   margin-top: 40px;
   overflow: hidden;
-  z-index: 100; }
+  z-index: 100;
+  margin-top: -40px; }
   .skill .skill-mid {
     margin: 0 auto;
     height: auto;
@@ -539,9 +544,10 @@ img {
         width: 80%;
         height: 80%;
         border-radius: 50%;
-        overflow: hidden;
+        overflow: hidden !important;
         background: #fff; }
         .skill .skill-eve .csss .dd img {
+          border-radius: 50%;
           width: 100%;
           -webkit-filter: grayscale(100%);
           -moz-filter: grayscale(100%);
@@ -550,8 +556,9 @@ img {
           filter: grayscale(100%);
           filter: gray;
           width: 100%;
-          transition: all 0.3s linear; }
+          transition: all 0.2s linear; }
         .skill .skill-eve .csss .dd img:hover {
+          border-radius: 50%;
           -webkit-filter: grayscale(0%);
           -moz-filter: grayscale(0%);
           -ms-filter: grayscale(0%);
@@ -564,7 +571,7 @@ img {
   width: 100%;
   height: auto;
   z-index: 100;
-  background: url("../img/19.jpg"); }
+  background: url("../img/19.jpg") cover; }
   .about .about-mid .simple-head {
     width: 100%;
     margin-bottom: 40px;
@@ -577,12 +584,12 @@ img {
     text-align: center;
     padding-top: 40px; }
   .about .about-mid ul .twobag {
-    height: 400px; }
+    height: auto; }
     .about .about-mid ul .twobag .simple {
       display: block;
       font-size: 18px;
       color: #fff;
-      font-weight: 500;
+      font-weight: bold;
       font-family: "microsoft yahei";
       padding: 10px;
       transition: all 0.8s linear 1s;
@@ -594,13 +601,16 @@ img {
       opacity: 1;
       transform: translateY(0px); }
     .about .about-mid ul .twobag .simple1 {
-      padding-top: 80px; }
+      padding-top: 60px; }
     .about .about-mid ul .twobag .tou {
       float: left;
       display: block;
       width: 160px;
       height: 160px;
       margin: 60px;
+      margin-right: 20px;
+      margin-bottom: 40px;
+      margin-left: 20px;
       border-radius: 50%;
       overflow: hidden; }
       .about .about-mid ul .twobag .tou img {
@@ -616,15 +626,17 @@ img {
       padding: 8px 0;
       transition: all 0.8s linear;
       transform: translateY(-100px);
-      opacity: 0; }
+      opacity: 0;
+      font-weight: bold; }
       .about .about-mid ul .twobag p i {
         color: #00C375; }
     .about .about-mid ul .twobag .mai-act,
     .about .about-mid ul .twobag .mai-act1,
-    .about .about-mid ul .twobag .mai-act2 {
+    .about .about-mid ul .twobag .mai-act2,
+    .about .about-mid ul .twobag .mai-act3 {
       transform: translateY(0px); }
     .about .about-mid ul .twobag .mai {
-      margin-top: 60px;
+      margin-top: 40px;
       transition: all 0.8s linear 0.6;
       opacity: 1; }
     .about .about-mid ul .twobag .mai1 {
@@ -633,5 +645,29 @@ img {
     .about .about-mid ul .twobag .mai2 {
       opacity: 1;
       transition: all 0.8s linear 1.4s; }
+    .about .about-mid ul .twobag .mai3 {
+      opacity: 1;
+      transition: all 0.8s linear 2s; }
+  .about .about-mid ul .my {
+    padding: 20px;
+    color: #FFF;
+    font-size: 18px;
+    font-family: "microsoft yahei";
+    letter-spacing: 0.3px; }
+
+.goTop {
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  font-family: "microsoft yahei";
+  color: #fff;
+  border-radius: 8px;
+  background: #79BE0B;
+  z-index: 900; }
 
 /*# sourceMappingURL=home.css.map */

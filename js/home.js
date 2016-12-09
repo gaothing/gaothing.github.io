@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
 		var win = $(window); //得到窗口对象
 		var sc = $(document); //得到document文档对象。
 		win.scroll(function() {
@@ -12,7 +11,6 @@ $(document).ready(function() {
 
 	})
 	//banner?
-
 $(document).ready(function() {
 	var n = 0;
 	var next = 0;
@@ -22,13 +20,11 @@ $(document).ready(function() {
 	};
 	flag2 = false;
 	var t = setInterval(move, 4000);
-
 	function move() {
 		next = n + 1;
 		if(next >= $(".cir").length) {
 			next = 0;
 		};
-
 		$(".cir").eq(n).removeClass("dong1").removeClass("dong").addClass("dong1").animate({
 			zLndex: 11
 		}, 10, function() {
@@ -40,9 +36,7 @@ $(document).ready(function() {
 			flag2 = true
 		})
 		n = next
-
 	}
-
 	$(".banner-left").click(function() {
 		if(!flag2) {
 			return;
@@ -63,14 +57,11 @@ $(document).ready(function() {
 			flag2 = true
 		})
 		n = next
-
 	})
 	$(".banner-right").click(function() {
-
 			move(t);
 		})
 		// floor楼层跳转
-
 	$(".menu .menu-eve").click(function() {
 		$(".menu .menu-eve").css("borderBottomColor", "transparent")
 		$(this).css("borderBottomColor", "#79BE0B")
@@ -86,11 +77,9 @@ $(document).ready(function() {
 	var win = $(window); //得到窗口对象
 	var sc = $(document); //得到document文档对象。
 	win.scroll(function() {
-
 		//获取滚动元素对应的索引!!!重难点
 		var index = Math.floor((sc.scrollTop() - 400) / 705);
 		if(index == 0) {
-			console.log($(".feat-left"))
 			$(".feat-left").addClass("feat-active")
 			$(".feat-right").addClass("feat-active2")
 			$(".header").addClass("header-act")
@@ -98,18 +87,24 @@ $(document).ready(function() {
 			$(".con-hd-tp").addClass('con-tp-act')
 			$(".con-hd-bt").addClass('con-bt-act')
 			$(".detail-eve").addClass('detail-eve-act')
-		} else if(index == 2) {
+			$(".xiaoyingyong").addClass('xiaoyingyong1')
+			$(".goTop").css("display","block")
+		} else if(index == 3) {
 			$(".simple-head").addClass("sim-hd")
 			$(".skill-mid p").addClass("ppp")
-		} else if(index == 3) {
+		} else if(index == 4) {
 			$(".simple").addClass("simple-act")
 			$(".mai").addClass("mai-act")
 			$(".mai1").addClass("mai-act1")
 			$(".mai2").addClass("mai-act2")
+			$(".mai3").addClass("mai-act3")
 		}
-
 		$(".menu .menu-eve").css("borderBottomColor", "transparent")
-		$(".menu .menu-eve").eq(index).css("borderBottomColor", "#79BE0B")
-
+		if(index<3){
+			$(".menu .menu-eve").eq(index).css("borderBottomColor", "#79BE0B")
+		}else{
+			$(".menu .menu-eve").eq(index-1).css("borderBottomColor", "#79BE0B")
+		}
+		
 	})
 })
