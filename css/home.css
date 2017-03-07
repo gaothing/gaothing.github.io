@@ -225,7 +225,7 @@ img {
     z-index: 10;
     overflow: hidden; }
     .banner .ban-imgs .back {
-      height: 100%; }
+      width: 100%; }
 
 /*!--FEATURES--*/
 .features {
